@@ -1,6 +1,6 @@
-@import 'variables';
+@use 'variables';
 h1 {
-    color: $blue-color;
+    color: variables.$blue-color;
 }
 h2 {
     color: green;

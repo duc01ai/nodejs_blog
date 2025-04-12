@@ -1,11 +1,11 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
-const newController = require('../app/controlers/NewsController')
+const newController = require('../app/controlers/NewsController');
 
 // newController.index
 // router.use('/', newController.show)
 
-router.use('/', newController.index)
+router.use('/', newController.index);
 
-module.exports = router
+module.exports = router;

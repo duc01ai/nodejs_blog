@@ -1,10 +1,10 @@
-const newsRouter = require('./news')
-const siteRouter = require('./site')
-function route(app){
-    app.use('/news', newsRouter)
+const newsRouter = require('./news');
+const siteRouter = require('./site');
+function route(app) {
+    app.use('/news', newsRouter);
     // app.use('/home', siteRouter)
     // app.use('/search', siteRouter)
-    app.use('/', siteRouter)
+    app.use('/', siteRouter);
     // app.get('/', (req, res) => {
     //     res.render('home');
     // });
@@ -17,9 +17,9 @@ function route(app){
     // })
     // app.post('/search', (req, res)=>{
     //     console.log('Form has been submitted');
-    //     console.log('Body:', req.body);  
+    //     console.log('Body:', req.body);
     //     res.render('search');
     // })
 }
 
-module.exports = route
+module.exports = route;
